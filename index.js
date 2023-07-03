@@ -18,6 +18,7 @@ app.get("/posts", (req, res)=>{
     res.json({ status: 1, data : dataPost})
 })
 
+
 app.post("/posts", (req, res)=>{
     console.log(req.body);
     const data = { ...req.body, id: nanoid()}
